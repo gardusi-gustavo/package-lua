@@ -8,6 +8,13 @@ permissions:
   contents: read
 jobs:
   ci:
-    uses: gardusi-gustavo/.github/.github/workflows/reusable-ci-lua.yml@v0.2.1
-    with:
-      command: bash infra/scripts/ci.sh
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lua
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lua5.4 luarocks
+      - name: Run
+        run: bash infra/scripts/ci.sh
