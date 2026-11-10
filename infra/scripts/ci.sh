@@ -6,5 +6,6 @@ cd "$ROOT"
 "$ROOT/infra/scripts/ci/check-size.sh" --root "$ROOT"
 "$ROOT/infra/scripts/ci/validate-local-issues.sh" --root "$ROOT"
 luarocks make
+luarocks install busted >/dev/null
 busted
 echo "package-lua checks ok"
