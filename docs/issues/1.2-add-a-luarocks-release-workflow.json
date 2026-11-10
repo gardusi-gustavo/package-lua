@@ -1,0 +1,18 @@
+{
+  "rank": "1.2",
+  "title": "Add a LuaRocks release workflow",
+  "context": "The package has a rockspec but no release automation.",
+  "limits": {
+    "max_commits": 4,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Publish tagged releases to LuaRocks.",
+    "expected_outcome": "A tag produces a verified rock.",
+    "acceptance_criteria": [
+      "Release workflow runs on tags",
+      "Rock installs cleanly"
+    ]
+  },
+  "attempts": []
+}

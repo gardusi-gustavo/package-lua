@@ -1,0 +1,18 @@
+{
+  "rank": "1.1",
+  "title": "Expand table helpers",
+  "context": "The initial table module covers merge, contains, and keys only.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add map and filter helpers with tests.",
+    "expected_outcome": "The module covers common embedded-scripting table operations.",
+    "acceptance_criteria": [
+      "Helpers are documented",
+      "Busted tests pass"
+    ]
+  },
+  "attempts": []
+}
