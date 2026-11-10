@@ -15,6 +15,6 @@ jobs:
       - name: Install Lua
         run: |
           sudo apt-get update
-          sudo apt-get install -y lua5.4 luarocks
+          sudo apt-get install -y lua5.4 liblua5.4-dev luarocks
       - name: Run
         run: bash infra/scripts/ci.sh
